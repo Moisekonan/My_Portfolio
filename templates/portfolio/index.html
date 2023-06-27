@@ -1,0 +1,525 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with JohnDoe landing page.">
+    <meta name="author" content="Devcrud">
+    <title>MoiseKonan | Portfolio</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="{% static 'vendors/themify-icons/css/themify-icons.css' %}">
+    <!-- Bootstrap + JohnDoe main styles -->
+	<link rel="stylesheet" href="{% static 'css/moko.css' %}">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="accueil">
+
+    <!--<a href="components.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Components</a>-->
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <ul class="social-icons pt-3">
+                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-facebook" aria-hidden="true" target="_blank"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-twitter" aria-hidden="true" target="_blank"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-google" aria-hidden="true" target="_blank"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-instagram" aria-hidden="true" target="_blank"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://github.com/KonanMoise/"><i class="ti-github" aria-hidden="true" target="_blank"></i></a></li>
+            </ul>  
+            <div class="header-content">
+                <h4 class="header-subtitle" >Salut, Je suis</h4>
+                <h1 class="header-title">Moïse Konan</h1>
+                <h6 class="header-mono" >Concepteur et Développeur | de Sites Web</h6>
+                <a id="btnPrint" class="btn btn-primary btn-rounded" href="{% static 'CV_MoiseKonan.pdf' %}" target="_blank"><i class="ti-printer pr-2"></i>Imprimer le CV</a>
+            </div>
+        </div>
+    </header>
+    <!-- End Header Section -->
+
+    <!-- Navigation -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="#accueil" class="nav-link">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#apropos" class="nav-link">À propos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#cv" class="nav-link">CV</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav brand">
+                    <img src="{% static 'imgs/oz1.jpg' %}" alt="" class="brand-img">
+                    <li class="brand-txt">
+                        <h5 class="brand-title">Moïse Konan</h5>
+                        <div class="brand-subtitle">Concepteur et Développeur | de Sites Web</div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#projets" class="nav-link">Projets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#blog" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item last-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navigation -->
+
+    <!-- Apropos Section -->
+    <div class="container-fluid">
+        <div id="apropos" class="row about-section">
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Qui suis-je ?</h3>
+                <span class="line mb-5"></span>
+                <h5 class="mb-3">Un concepteur/développeur Web situé dans notre belle région</h5>
+                <p class="mt-20 text-break">Un jeune étudiant, passionner de la programmation et veux etre mis à l'épreuve.<br>
+                    <span style="font-weight:bold; font-size:1.2rem">Je code donc je crée. Du bout de mes doigts le futur naît.</span>
+                </p>
+                <a class="btn btn-outline-danger" href="{% static 'CV_MoiseKonan.pdf' %}" download><i class="icon-down-circled2"></i>Télécharger Mon CV</a>
+            </div>
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Infos Personnel</h3>
+                <span class="line mb-5"></span>
+                <ul class="mt40 info list-unstyled">
+                    <li><span>Date Anniverssaire</span> : 04/10/2001</li>
+                    <li><span>Email</span> : mokonan99@ggmail.com</li>
+                    <li><span>Téléphone</span> : +(225) 0506348232</li>
+                    <li><span>Linkedln</span> : Kouassi Moise Konan </li>
+                    <li><span>Adresse</span> :  Marcory GFCI, Abidjan, CIV.</li>
+                </ul>
+                <ul class="social-icons pt-3">
+                    <li class="social-item"><a class="social-link" href="#"><i class="ti-facebook" aria-hidden="true" target="_blank"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="#"><i class="ti-twitter" aria-hidden="true" target="_blank"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="#"><i class="ti-google" aria-hidden="true" target="_blank"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="#"><i class="ti-instagram" aria-hidden="true" target="_blank"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://github.com/KonanMoise/" target="_blank"><i class="ti-github" aria-hidden="true" target="_blank"></i></a></li>
+                </ul>  
+            </div>
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Mon expertise</h3>
+                <span class="line mb-5"></span>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-widget icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Conception UX</h6>
+                        <p class="subtitle"> Réalisation de marquette.</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-paint-bucket icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Développement Web</h6>
+                        <p class="subtitle">Création de logiciel web.</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-stats-up icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Développement Mobile</h6>
+                        <p class="subtitle">Création de logiciel web.</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Apropos Section -->
+
+    <!--CV Section-->
+    <section class="section" id="cv">
+        <div class="container">
+            <h2 class="mb-5"><span class="text-danger">Mon</span> curriculum vitae</h2> 
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    {% if experience %}
+                    <div class="card">
+                        <div class="card-header">
+                             <div class="mt-2">
+                                 <h4>Expérience</h4>
+                                 <span class="line"></span>  
+                             </div>
+                        </div>
+                        {% for exp in experience %}
+                        <div class="card-body">
+                            <h6 class="title text-danger">{{ exp.date_debut | date:'Y' }} - {% if exp.date_fin == date.today %}Present {% else %}{{ exp.date_fin | date:'Y' }}{% endif %}</h6>
+                            <P><span style="color: black; font-size: 1.1rem;">{{ exp.titre }}</span> - <span><a href="{% if exp.lien_entreprise == None %} # {% else %}{{ exp.lien_entreprise }}{% endif %}" target="_blank" style="color: #6c757d;">{{ exp.entreprise }}</a></span></P>
+                            <P class="subtitle">{{ exp.description }}</P>
+                            <hr>
+                        </div>
+                        {% endfor %}
+                     </div>
+                    {% endif %}
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    {% if education %}
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="mt-2">
+                                    <h4>Education</h4>
+                                    <span class="line"></span>  
+                                </div>
+                            </div>
+                            {% for edu in education %}
+                                <div class="card-body">
+                                    <h6 class="title text-danger">{{ edu.date_debut | date:'Y' }} - {% if edu.date_fin == date.today %}Present {% else %}{{ edu.date_fin | date:'Y' }}{% endif %}</h6>
+                                    <P><span style="color: black; font-size: 1.1rem;">{{ edu.diplome }}</span> - <span><a href="{% if edu.lien_etablissement == None %} # {% else %}{{ edu.lien_etablissement }}{% endif %}" target="_blank" style="color: grey;">{{ edu.etablissement }}</a></span></P>
+                                    <P class="subtitle">{{ edu.description }}.</P>
+                                    <hr>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </div>
+                <div class="col-lg-4">
+                    <!-- affichage des Compétences -->
+                    {% if cmpetances %}
+                        <div class="card">
+                        <div class="card-header">
+                             <div class="pull-left">
+                                 <h4 class="mt-2">Compétences</h4>
+                                 <span class="line"></span>  
+                             </div>
+                         </div>
+                         <div class="card-body pb-2">
+                            {% for cmpte in cmpetances %}
+                                <h6>{{ cmpte.nom }}</h6>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: {% if cmpte.niveau == None %}50%{% else %}{{ cmpte.niveau }}%{% endif %}" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            {% endfor %}
+                         </div>
+                        </div>
+                    {% endif %}
+                    <!-- affichage des Langues -->
+                    {% if langs %}
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="pull-left">
+                                    <h4 class="mt-2">Langues</h4>
+                                    <span class="line"></span> 
+                                </div>
+                            </div>
+                            <div class="card-body pb-2">
+                                {% for lang in langs %}
+                                    <h6>{{ lang.nom }}</h6>
+                                    <div class="progress mb-3">
+                                        <div class="progress-bar bg-danger" role="progressbar" style="width: {% if lang.niveau == None %}50%{% else %}{{ lang.niveau }}%{% endif %}" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End CV Section-->
+
+    <!-- Hobbies Section -->
+    <section class="section bg-dark text-center">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6 col-lg-3">
+                    <div class="row ">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-alarm-clock icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">300</h1>
+                            <p class="text-light mb-1">Heurs Travail</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-layers-alt icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">{{ projets.count }}</h1>
+                            <p class="text-light mb-1">Projets Fini</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-face-smile icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">{{ clients.count }}</h1>
+                            <p class="text-light mb-1">Clients Satisfait</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-heart-broken icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">35</h1>
+                            <p class="text-light mb-1">Chocolat Chaud Bu</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Hobbies Section -->
+
+    <!--Services Section-->
+    {% if services %}
+        <section class="section" id="service">
+            <div class="container">
+                <h2 class="mb-5 pb-4"><span class="text-danger">Mes</span> Services</h2>
+                <div class="row">
+                    {% for service in services %}
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card mb-5">
+                            <div class="card-header has-icon">
+                                    <i class="ti-vector text-danger" aria-hidden="true"></i>
+                                </div>
+                                <div class="card-body px-4 py-3">
+                                    <h5 class="mb-3 card-title text-dark">{{ service.nom }}</h5>
+                                    <P class="subtitle">{{ service.description }}</P>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </section>
+    {% endif %}
+    <!-- end services Section-->
+
+    <!-- Freelance Section -->
+    <section class="section bg-dark py-5">
+        <div class="container text-center">
+            <h2 class="text-light mb-5 font-weight-normal">Je suis disponible pour FreeLance</h2>
+            <a href="#contact" class="btn bg-primary w-lg" >Embauchez-moi</a>
+        </div>
+    </section>
+    <!-- End Freelance Section -->
+
+    <!-- Projet Section -->
+    <section class="section bg-custom-gray" id="projets">
+        <div class="container">
+            <h1 class="mb-5"><span class="text-danger">Mes</span> Projets</h1>
+            <div class="portfolio">
+                <div class="filters">
+                    <a href="#filter-all" data-filter=".all" class="active">
+                        Tout
+                    </a>
+                    {% for categorie in categori %}
+                        <a href="#filter-{{ categorie.nom | lower }}" data-filter=".{{ categorie.nom | lower }}">
+                            {{ categorie.nom }}
+                        </a>
+                    {% endfor %}
+                </div>
+                <div class="portfolio-container">
+                    {% for projet in projets %}
+                        <div class="col-md-6 col-lg-4 all {{ projet.categorie.nom | lower }}" data-category="{{ projet.categorie.nom|lower }}">
+                            <div class="portfolio-item">
+                                <img src="{{ projet.image.url }}" class="img-fluid" alt="" style="width:100%; height:20vh;">
+                                <div class="content-holder">
+                                    <a class="img-popup" href="{{ projet.image.url }}"></a>
+                                    <div class="text-holder">
+                                        <h6 class="title">{{ projet.title }}</h6>
+                                        <p class="subtitle">{{ projet.description }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>  
+        </div>            
+    </section>
+    <!-- End Projet section -->
+
+    <!-- Blog Section -->
+    {% if blogs %}
+        <section class="section" id="blog">
+            <div class="container">
+                <h2 class="mb-5">Dernières <span class="text-danger">Nouvelles</span></h2>
+                {% for blog in blogs %}
+                <div class="row">
+                    <div class="blog-card">
+                        <div class="img-holder">
+                            <img src="{{ blog.image.url }}" alt="">
+                        </div>
+                        <div class="content-holder">
+                            <h6 class="title">{{ blog.title }}</h6>
+
+                            <p class="post-details">
+                                <a href="#">Par: Admin</a>
+                                <a href="#"><i class="ti-heart text-danger"></i> 234</a>
+                                <a href="#"><i class="ti-comment"></i> 123</a>
+                            </p>
+                            
+                            <p>{{ blog.description|truncatechars:255 }}</p>
+
+                            <a href="{% url 'blog:detail_blog' blog.id %}" class="read-more">Lire Plus <i class="ti-angle-double-right"></i></a>
+                        </div>
+                    </div><!-- end of blog wrapper --> 
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+    {% endif %}
+    <!-- End Blog Section -->
+
+    <!-- Contact Section -->
+    <div class="section contact" id="contact">
+        <div id="map" class="map"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="contact-form-card">
+                        <h4 class="contact-title">Envoyer un message</h4>
+                        <form method="POST" action="">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <input  class="form-control" name="nom" type="text" placeholder="Nom *" required>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" name="email" type="email" placeholder="Email *" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" name="message" id="" placeholder="Message" rows="7" required></textarea>
+                            </div>
+                            <div class="form-group ">
+                                <button type="submit" class="form-control btn btn-primary" >Envoyer le message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="contact-info-card">
+                        <h4 class="contact-title">Prendre contact</h4>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-mobile icon-md"></i>
+                            </div>
+                            <div class="col-10 ">
+                                <h6 class="d-inline">Téléphone : <br> <span class="text-muted">+(225) 0506348232</span></h6>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-map-alt icon-md"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline">Address :<br> <span class="text-muted">Marcory GFCI, Abidjan, CIV.</span></h6>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-envelope icon-md"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline">Email :<br> <span class="text-muted">mokonan99@gmail.com</span></h6>
+                            </div>
+                        </div>
+                        <ul class="social-icons pt-4">
+                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-facebook" aria-hidden="true" target="_blank"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-twitter" aria-hidden="true" target="_blank"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-google" aria-hidden="true" target="_blank"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="#"><i class="ti-instagram" aria-hidden="true" target="_blank"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="https://github.com/KonanMoise/"><i class="ti-github" aria-hidden="true" target="_blank"></i></a></li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End Contact Section -->
+
+    <!-- Footer -->
+    <footer class="footer py-3">
+        <div class="container">
+            <p class="small mb-0 text-light">
+                &copy; <script>document.write(new Date().getFullYear())</script> Créer Avec <i class="ti-heart text-danger"></i> Par <a href="https://github.com/moisekonan" target="_blank"><span class="text-danger" title="Bootstrap 4 Themes and Dashboards">Moko&amp;Co</span></a> 
+            </p>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    
+
+	<!-- core  -->
+    <script src="{% static 'vendors/jquery/jquery-3.4.1.js' %}"></script>
+    <script src="{% static 'vendors/bootstrap/bootstrap.bundle.js' %}"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="{% static 'vendors/bootstrap/bootstrap.affix.js' %}"></script>
+
+    <!-- Isotope  -->
+    <script src="{% static 'vendors/isotope/isotope.pkgd.js' %}"></script>
+    
+    <!-- Google mpas -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+
+    <!-- JohnDoe js -->
+    <script src="{% static 'js/moko.js' %}"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(window).on("load", function() {
+            var t = $(".portfolio-container");
+            t.isotope({
+                filter: ".all",
+                animationOptions: {
+                    duration: 750,
+                    easing: "linear",
+                    queue: false
+                }
+            });
+        
+            $(".filters a").click(function(event) {
+                event.preventDefault(); // Empêche le comportement par défaut du navigateur
+        
+                $(".filters .active").removeClass("active");
+                $(this).addClass("active");
+                var filterValue = $(this).attr("data-filter");
+        
+                t.isotope({
+                    filter: filterValue,
+                    animationOptions: {
+                        duration: 750,
+                        easing: "linear",
+                        queue: false
+                    }
+                });
+            });
+
+            $(document).ready(function() {
+                $('#btnPrint').click(function() {
+                    window.print();
+                });
+            });
+        });
+        
+    </script>
+
+</body>
+</html>

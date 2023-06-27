@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Détails du Blog</title>
+  <!-- CSS Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- CSS personnalisé -->
+  <link rel="stylesheet" href="{% static 'css/moko.css' %}">
+</head>
+
+<body>
+    <header class="header" style="height:10vh">
+        <div class="container">
+            <ul class="social-icons pt-3">
+                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-facebook" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-twitter" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-google" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
+            </ul>  
+            <div class="header-content">
+                <h4 class="header-subtitle" >Salut, Je suis</h4>
+                <h1 class="header-title">Moïse Konan</h1>
+                <h6 class="header-mono" >Concepteur et Développeur | de Sites Web</h6>
+                <button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>Imprimer le CV</button>
+            </div>
+        </div>
+    </header>
+  <!-- Navigation -->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
+    <div class="container">
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="/" class="nav-link">Accueil</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav brand">
+                <img src="{% static 'imgs/code.jpg' %}" alt="" class="brand-img">
+                <li class="brand-txt">
+                    <h5 class="brand-title">Moïse Konan</h5>
+                    <div class="brand-subtitle">Concepteur et Développeur | de Sites Web</div>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#blog" class="nav-link">Blog</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  <!-- Contenu de la page -->
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-lg-8">
+        <h1 class="mb-4">{{ blog.title }}</h1>
+        <img src="{{ blog.image.url }}" alt="Image de l'article" class="img-fluid mb-4">
+        <p style="font-size:1.3rem">{{ blog.description }}</p>
+      </div>
+      <div class="col-lg-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Ajouter par</h5>
+            <ul class="list-unstyled">
+              <li><a href="#">MoiseKonan</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
