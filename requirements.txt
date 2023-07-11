@@ -3,3 +3,7 @@ Django==4.2.2
 Pillow==9.5.0
 secure-smtplib==0.1.1
 sqlparse==0.4.4
+
+#2b554e vert foncé
+#457f76 vert mifoncé
+#e2f4f1 vert clair
